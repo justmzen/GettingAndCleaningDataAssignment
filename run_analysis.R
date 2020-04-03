@@ -72,4 +72,4 @@ MD2 <- MD2[, .(meanValue = mean(value)),
 MD2 <- arrange(MD2, subjectNumber, variable, activityLabel)
 
 # Writing of MD2
-fwrite(x = MD2, file = 'tidy_data.csv')
+fwrite(x = MD2, file = 'tidy_data.csv', row.names = FALSE)
